@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>lab3_PAp_2023</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>createUser</display-name>
+		<servlet-name>CreateUser</servlet-name>
+		<jsp-file>/createUser.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateUser</servlet-name>
+		<url-pattern>/createUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>editUser</display-name>
+		<servlet-name>EditUser</servlet-name>
+		<jsp-file>/editUser.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUser</servlet-name>
+		<url-pattern>/editUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>consultUser</display-name>
+		<servlet-name>ConsultUser</servlet-name>
+		<jsp-file>/consultUser.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConsultUser</servlet-name>
+		<url-pattern>/consultUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>createOuting</display-name>
+		<servlet-name>CreateOuting</servlet-name>
+		<jsp-file>/createOuting.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateOuting</servlet-name>
+		<url-pattern>/createOuting</url-pattern>
+	</servlet-mapping>
+</web-app>
